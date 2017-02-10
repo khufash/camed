@@ -1,0 +1,25 @@
+<ngb-tabset>
+	<ngb-tab title="AmCharts">
+		<template ngbTabContent>
+		  <amchart></amchart>
+		</template>
+	</ngb-tab>
+
+	<ngb-tab>
+    <template ngbTabTitle><b>Modal</b> popup</template>
+
+    	<template ngbTabContent>
+	    	<template ngbModalContainer></template>
+			<ngbd-modal-component></ngbd-modal-component>
+	    </template>
+	</ngb-tab>
+
+	<ngb-tab title="dropdown" [disabled]="false">
+	    <template ngbTabContent>
+	      	<p>
+	      		Some dropdown menu impleneted <br> <br>
+	      		<ngbd-dropdown-basic></ngbd-dropdown-basic>
+	  		</p>
+	    </template>
+	</ngb-tab>
+</ngb-tabset>
