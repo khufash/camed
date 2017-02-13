@@ -1,7 +1,12 @@
 .header {
 	// background-color: rgba(0,0,0,0.05);
- 	padding-top: 20px;
- 	padding-bottom: 20px;
+ 	padding: 20px 60px;
+    background-color: rgba(23,48,40, 0.7);
+    color: #fff;
+    margin-bottom: -70px;
+    h1 {
+        font-size: 18px;
+    }
 }
 
 
@@ -29,4 +34,7 @@
 
 .nav-item {
     margin-right: 20px;
+    a {
+        color: #fff;
+    }
 }
