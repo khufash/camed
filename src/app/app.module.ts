@@ -10,7 +10,8 @@ import { AmchartComponent } from './components-composite/amcharts/barchart/amcha
 import { PiechartComponent } from './piechart.component';
 import { AmChartsDirective } from "amcharts3-angular2/amcharts.directive";
 import { Observable } from  "rxjs/Rx";
-// import { Router, RouterModule } from '@angular/router';
+
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 
@@ -22,11 +23,12 @@ import { ThreeBounceComponent } from './components-composite/spinner/three-bounc
 import { AboutUsComponent } from './components-composite/about-us/about-us.component';
 
 // import { LoadingContainer } from './components-composite/loading-container';
-
 // import {SpinnerComponent} from './components-composite/spinner/spinner'; 
-
-
 // import * as spinner from 'ng2-spin-kit/app/spinner/three-bounce';
+
+const appRoutes: Routes = [
+    { path: 'about-us', component: AboutUsComponent },
+];
 
 @NgModule({
   declarations: [
@@ -43,8 +45,8 @@ import { AboutUsComponent } from './components-composite/about-us/about-us.compo
     CarouselComponent,
     ThreeBounceComponent,
     AboutUsComponent
-    // LoadingContainer
   ],
+
   entryComponents: [
     NgbdModalContent
   ],
@@ -55,10 +57,11 @@ import { AboutUsComponent } from './components-composite/about-us/about-us.compo
     ReactiveFormsModule,
     JsonpModule,
     HttpModule,
-    // RouterModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
