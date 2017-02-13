@@ -20,14 +20,21 @@ import { NgbdDropdownBasic } from './components-composite/bootstrap/dropdown/dro
 import { TabsComponent } from './components-composite/bootstrap/tabs/tabs.component';
 import { CarouselComponent } from './components-composite/bootstrap/carousel/carousel.component';
 import { ThreeBounceComponent } from './components-composite/spinner/three-bounce';
+import { HomeComponent } from './components-composite/home/home.component';
 import { AboutUsComponent } from './components-composite/about-us/about-us.component';
+import { ServicesComponent } from './components-composite/services/services.component';
+import { ContactUsComponent } from './components-composite/contact-us/contact-us.component';
 
 // import { LoadingContainer } from './components-composite/loading-container';
 // import {SpinnerComponent} from './components-composite/spinner/spinner'; 
 // import * as spinner from 'ng2-spin-kit/app/spinner/three-bounce';
 
 const appRoutes: Routes = [
+    { path: '',   redirectTo: '/home', pathMatch: 'full' },
+    { path: 'home', component: HomeComponent },
     { path: 'about-us', component: AboutUsComponent },
+    { path: 'services', component: ServicesComponent },
+    { path: 'contact-us', component: ContactUsComponent },
 ];
 
 @NgModule({
@@ -44,7 +51,10 @@ const appRoutes: Routes = [
     TabsComponent,
     CarouselComponent,
     ThreeBounceComponent,
-    AboutUsComponent
+    HomeComponent,
+    AboutUsComponent,
+    ServicesComponent,
+    ContactUsComponent
   ],
 
   entryComponents: [

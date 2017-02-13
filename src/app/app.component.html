@@ -9,26 +9,22 @@
 
 				<ul class="nav justify-content-end">
 				  <li class="nav-item">
-				    <a routerLink="/about-us" routerLinkActive="active">About Us</a>
+				    <a routerLink="home" routerLinkActive="active">Home</a>
 				  </li>
 				  <li class="nav-item">
-				    <a class="nav-link" href="#">Services</a>
+				    <a routerLink="about-us" routerLinkActive="active">About Us</a>
 				  </li>
 				  <li class="nav-item">
-				    <a class="nav-link" href="#">Contact Us</a>
+				    <a routerLink="services" routerLinkActive="active">Services</a>
 				  </li>
 				  <li class="nav-item">
-				    <a class="nav-link disabled" href="#">Disabled</a>
+				    <a routerLink="contact-us" routerLinkActive="active">Contact Us</a>
 				  </li>
 				</ul>
 			</div>
 		</div>
 	</div>
-	
-	<ngbd-carousel-basic></ngbd-carousel-basic>
+	<router-outlet></router-outlet>	
 
-	<router-outlet></router-outlet>			
-	
-	<ngbd-tabset-basic></ngbd-tabset-basic>
 
 </div>
