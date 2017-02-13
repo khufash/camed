@@ -20,7 +20,6 @@ import { TabsComponent } from './components-composite/bootstrap/tabs/tabs.compon
 import { CarouselComponent } from './components-composite/bootstrap/carousel/carousel.component';
 import { ThreeBounceComponent } from './components-composite/spinner/three-bounce';
 import { AboutUsComponent } from './components-composite/about-us/about-us.component';
-import { ServicesComponent } from './components-composite/services/services.component';
 
 // import { LoadingContainer } from './components-composite/loading-container';
 
@@ -43,8 +42,7 @@ import { ServicesComponent } from './components-composite/services/services.comp
     TabsComponent,
     CarouselComponent,
     ThreeBounceComponent,
-    AboutUsComponent,
-    ServicesComponent
+    AboutUsComponent
     // LoadingContainer
   ],
   entryComponents: [
