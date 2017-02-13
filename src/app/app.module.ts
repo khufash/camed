@@ -30,7 +30,7 @@ import { ContactUsComponent } from './components-composite/contact-us/contact-us
 // import * as spinner from 'ng2-spin-kit/app/spinner/three-bounce';
 
 const appRoutes: Routes = [
-    { path: '',   redirectTo: '/home', pathMatch: 'full' },
+    { path: '',   redirectTo: 'home', pathMatch: 'full' },
     { path: 'home', component: HomeComponent },
     { path: 'about-us', component: AboutUsComponent },
     { path: 'services', component: ServicesComponent },
